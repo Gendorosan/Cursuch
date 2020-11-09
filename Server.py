@@ -70,3 +70,7 @@ def find_worker_surname():
                     'lastname': out[i][3]}
         dict.update([(out[i][0], out_dict)])
     return jsonify(dict)
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
